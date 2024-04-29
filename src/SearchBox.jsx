@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { searchMovies } from "./DataApi";
-import MovieCard from "./Movies/MovieCard";
 import { Link } from "react-router-dom";
 
 import "./Movies/MovieDetailsDisplay.css";
