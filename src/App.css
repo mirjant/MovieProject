@@ -1,8 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
+
 
 .navbar {
   display: flex;
@@ -22,19 +19,21 @@
   padding: 0px;
   background: transparent;
   border-radius: 10%;
+  
 }
+
 .links {
   display: flex;
   gap: 50px;
 }
 
-.contanier-top-img{
+.contanier-top-img {
   color: goldenrod;
   text-align: center;
 }
 
 #top-img {
-margin-top: 20px;
+  margin-top: 20px;
   width: 1000px;
   height: 300px;
   object-fit: cover;
@@ -59,9 +58,6 @@ margin-top: 20px;
   color: white;
 }
 
-body {
-  background-image: linear-gradient(180deg, #2c3e50, #4ca0ae);
-}
 .footer {
   width: 100%;
   height: 100px;

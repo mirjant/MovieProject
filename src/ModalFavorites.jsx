@@ -1,20 +1,24 @@
-import React, { useState } from "react";
-import { Button, Modal } from "antd";
+import { useState, useEffect } from "react";
+import { Modal } from "antd";
 import MovieCard from "./Movies/MovieCard";
 import { HeartOutlined, HeartFilled } from "@ant-design/icons";
+
 
 const ModalFavorites = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [favorites, setFavorites] = useState([]);
 
-  // Function to fetch favorites from local storage
-  const fetchFavoritesFromLocalStorage = () => {
+  const fetchFavoritesFromLocalStorage = async () => {
     const favoritesFromStorage =
       JSON.parse(localStorage.getItem("favorites")) || [];
     setFavorites(favoritesFromStorage);
   };
 
-  // Open the modal and fetch favorites from local storage
+ 
+  useEffect(() => {
+    fetchFavoritesFromLocalStorage();
+  }, []);
+
   const showModal = () => {
     setIsModalOpen(true);
     fetchFavoritesFromLocalStorage();
@@ -49,7 +53,6 @@ const ModalFavorites = () => {
         onOk={handleOk}
         onCancel={handleCancel}
         footer={null}
-        
       >
         <div
           key={favorites.id}
@@ -58,7 +61,6 @@ const ModalFavorites = () => {
             display: "grid",
             gridTemplateColumns: "auto auto ",
             rowGap: "10px",
-            
           }}
         >
           {favorites.map((favorite) => (

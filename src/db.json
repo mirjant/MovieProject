@@ -1,6 +1,182 @@
 {
   "reservesios": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+    {
+      "id": "10e1",
+      "tickets": "3",
+      "date": "24052024",
+      "time": "10:00",
+      "theatre": "1",
+      "seatSelection": "3"
+    },
+    {
+      "id": "9d0e",
+      "tickets": "4",
+      "date": "",
+      "time": "",
+      "theatre": "",
+      "seatSelection": "4"
+    },
+    {
+      "id": "1645",
+      "tickets": "4",
+      "date": "24052024",
+      "time": "10:00",
+      "theatre": "1"
+    },
+    {
+      "id": "8f7e",
+      "tickets": "6",
+      "date": "24052024",
+      "time": "10:00",
+      "theatre": "1",
+      "seatSelection": "6"
+    },
+    {
+      "id": "32bb",
+      "tickets": "",
+      "date": "",
+      "time": "",
+      "theatre": "",
+      "seatSelection": ""
+    },
+    {
+      "id": "5712",
+      "Name": "miri",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 3,
+      "time": "10:00",
+      "totalPrice": "1234",
+      "theatre": "1",
+      "cardNumber": "",
+      "cvv": "",
+      "expirationDate": "",
+      "date": "2024-05-15T22:00:00.000Z"
+    },
+    {
+      "id": "3fa1",
+      "Name": "miri",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 5,
+      "totalPrice": "1234",
+      "date": "2024-05-13T22:00:00.000Z"
+    },
+    {
+      "id": "d41b",
+      "Name": "miri",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 4,
+      "totalPrice": "1234",
+      "theatre": "Theatre 1",
+      "date": "2024-05-13T22:00:00.000Z"
+    },
+    {
+      "id": "e9e5",
+      "Name": "miri2",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 4,
+      "totalPrice": "1234",
+      "theatre": 1,
+      "date": "2024-05-14T22:00:00.000Z"
+    },
+    {
+      "id": "486b",
+      "Name": "miri2",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 3,
+      "totalPrice": "",
+      "theatre": 1,
+      "date": "2024-05-14T22:00:00.000Z"
+    },
+    {
+      "id": "c722",
+      "Name": "miri",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 3,
+      "totalPrice": "1234",
+      "date": "2024-05-20T22:00:00.000Z",
+      "Theatre": "Theatre 2"
+    },
+    {
+      "id": "bb8f",
+      "Name": "miri4",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 3,
+      "totalPrice": "1234",
+      "date": "2024-05-20T22:00:00.000Z",
+      "theatre": "theatre 1"
+    },
+    {
+      "id": "2871",
+      "Name": "miri6",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 2,
+      "totalPrice": "12",
+      "date": "2024-05-20T22:00:00.000Z",
+      "theatre": "theatre 2"
+    },
+    {
+      "id": "6f3f",
+      "Name": "miri7",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 3,
+      "totalPrice": "1234",
+      "date": "2024-05-12T22:00:00.000Z",
+      "theatre": "theatre 3"
+    },
+    {
+      "id": "817b",
+      "Name": "miri8",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 2,
+      "totalPrice": "12",
+      "date": "2024-05-12T22:00:00.000Z",
+      "theatre": "theatre 3"
+    },
+    {
+      "id": "c2b3",
+      "Name": "miri9",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 2,
+      "totalPrice": "1234",
+      "date": "2024-05-12T22:00:00.000Z",
+      "theatre": "theatre 3"
+    },
+    {
+      "id": "f0d1",
+      "Name": "miri9",
+      "email": "mirjantashi79@gmail.com",
+      "tickets": 3,
+      "totalPrice": "1234",
+      "date": "2024-05-12T22:00:00.000Z",
+      "time": "03:00",
+      "theatre": "theatre 2"
+    }
+  ],
+  "login": [
+    {
+      "id": "ecce",
+      "email": "johnd@gmail.com",
+      "password": "m38rmF$"
+    }
+  ],
+  "signup": [
+    {
+      "id": "2509",
+      "username": "johnd",
+      "email": "mirjantashi79@gmail.com",
+      "password": "m38rmF$"
+    },
+    {
+      "id": "faf2",
+      "username": "johnd",
+      "email": "mirjantashi79@gmail.com",
+      "password": "m38rmF$"
+    },
+    {
+      "id": "dc2a",
+      "username": "johnd",
+      "email": "mirjantashi79@gmail.com",
+      "password": "m38rmF$"
+    }
   ]
 }

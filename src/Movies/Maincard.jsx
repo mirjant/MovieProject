@@ -6,6 +6,7 @@ import MovieCard from "./MovieCard";
 import { Pagination } from "antd";
 import "./MovieDetailsDisplay.css";
 
+
 const Maincard = () => {
   const [page, setPage] = useState(1);
   const { data, isLoading, isError } = useQuery(["popularMovies", page], () =>

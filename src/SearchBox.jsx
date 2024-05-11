@@ -34,7 +34,7 @@ const SearchMovies = () => {
           border: "none",
           borderRadius: "30px",
         }}
-        type="text"
+        type="search"
         value={searchQuery}
         onChange={handleSearchChange}
         placeholder="Search movies..."
