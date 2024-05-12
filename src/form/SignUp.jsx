@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Navbar1 from "../Navbar1";
+import { Alert } from "antd";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
+    confirmPassword: "",
   });
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -28,13 +33,14 @@ function SignUp() {
         {
           email: formData.email,
           password: formData.password,
+          confirmPassword: formData.confirmPassword,
           returnSecureToken: true,
         }
       );
       console.log("Signup successful:", response.data);
-     
-
-      
+      await axios.post("http://localhost:3000/signup", response.data);
+      navigate("/MyForm");
+      <Alert message="Success Text" type="success" />;
     } catch (error) {
       console.error("Error signing up:", error);
       setError(error.response.data.error.message);
@@ -44,27 +50,44 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="logIn">
+      <Navbar1></Navbar1>
+      <form className="logInForm" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email:</label>
+          <h2>Sign Up</h2>
+
           <input
+            className="logInInput"
             type="email"
             id="email"
             name="email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
           <input
+            className="logInInput"
             type="password"
             id="password"
             name="password"
+            placeholder="Password"
             value={formData.password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div>
+          <input
+            className="logInInput"
+            type="password"
+            id="confirmPassword" // Unique id for confirmPassword
+            name="confirmPassword" // Unique name for confirmPassword
+            placeholder="Confirm Password"
+            value={formData.confirmPassword}
             onChange={handleChange}
             required
           />

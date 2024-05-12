@@ -12,12 +12,10 @@ function Navbar1() {
   }
 
   const navigate = useNavigate();
-  const handleLogIn = () => {
-    navigate("/LogIn");
-  };
+  const isLoggedIn = localStorage.getItem("token");
 
   const handleSignUp = () => {
-    navigate("/SignUp");
+    navigate("/SignUpForm");
   };
 
   return (
@@ -33,12 +31,40 @@ function Navbar1() {
         </div>
 
         <div className="links">
-         
-          <button className="links" onClick={handleLogout}>
-            Logout
-          </button>
-          <button className="links" onClick={handleSignUp}>
-            SignUp
+          {isLoggedIn ? (
+            <button
+              style={{
+                textDecoration: "none",
+                background: "transparent",
+                border: "none",
+                color: "white",
+              }}
+              className="links"
+              onClick={handleLogout}
+            >
+              <h5>Log out</h5>
+            </button>
+          ) : (
+            <>
+              <Link className="link" to={"/login"}>
+                <h5 style={{ textDecoration: "none", color: "white" }}>
+                  Login
+                </h5>
+              </Link>
+            </>
+          )}
+
+          <button
+            className="links"
+            style={{
+              textDecoration: "none",
+              background: "transparent",
+              border: "none",
+              color: "white",
+            }}
+            onClick={handleSignUp}
+          >
+            <h5>SignUp</h5>
           </button>
           <Link className="link" to={"/"}>
             {" "}
