@@ -46,7 +46,7 @@ const MovieDetailsDisplay = () => {
     backgroundSize: "cover",
 
     width: "100%",
-    height: "570px",
+    height: "770px",
     display: "flex",
     color: "#ffffff",
   };
@@ -58,7 +58,7 @@ const MovieDetailsDisplay = () => {
     <>
       <Navbar1></Navbar1>
       <section style={backgroundStyle}>
-        <div className="contanier"   >
+        <div className="contanier">
           <div>
             <img
               src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`}
@@ -77,7 +77,7 @@ const MovieDetailsDisplay = () => {
               ))}
               <b>·</b> {hours}h {minutes}min
             </p>
-            <p>
+            <p className="overview-details">
               Overview <br /> {movieDetails.overview}
             </p>
 
@@ -96,8 +96,21 @@ const MovieDetailsDisplay = () => {
                   (crewMember) => crewMember.job === "Director"
                 ).name
               }
-              
             </p>
+            <div className="actors">
+              <p>Actors:</p>
+              <div className="actor-list">
+                {movieDetails.credits.cast.map((actor) => (
+                  <div key={actor.id} className="actor">
+                    <img
+                      src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}
+                      alt={actor.name}
+                    />
+                    <p>{actor.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="iframe-container">

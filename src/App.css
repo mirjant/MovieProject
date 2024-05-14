@@ -2,11 +2,18 @@
   display: flex;
   justify-content: space-between;
   background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-bottom: 2px solid rgb(36, 181, 82);
 }
 
 .navbar-logo {
-  color: white;
+  color: rgb(98, 176, 46);
   margin-left: 30px;
+  transition: 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-5px);
 }
 
 .searchbox {
@@ -14,13 +21,23 @@
   height: 35px;
   border: none;
   padding: 0px;
+
   background: transparent;
   border-radius: 10%;
 }
 
 .links {
   display: flex;
+
   gap: 50px;
+}
+
+.navbar h5 {
+  color: rgb(98, 176, 46);
+  transition: 0.3s;
+}
+.navbar h5:hover {
+  transform: translateY(-5px);
 }
 
 .contanier-top-img {
@@ -39,6 +56,7 @@
   height: 240px;
   margin-top: 50px;
   border-radius: 30px;
+  margin-bottom: 100px;
   overflow: hidden;
   background: transparent;
   border: none;

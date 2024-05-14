@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import SearchMovies from "./SearchBox";
 import { Link, useNavigate } from "react-router-dom";
-
+import "./App.css";
 import FavoritesModal from "./ModalFavorites";
 
 function Navbar1() {
@@ -68,7 +68,7 @@ function Navbar1() {
           </button>
           <Link className="link" to={"/"}>
             {" "}
-            <h5 style={{ textDecoration: "none", color: "white" }}>Home</h5>
+            <h5>Home</h5>
           </Link>
 
           <FavoritesModal></FavoritesModal>
