@@ -44,7 +44,7 @@ function MyForm() {
 
   // Define a mutation function using useMutation
   const mutation = useMutation((data) =>
-    axios.post("http://localhost:3000/reservesios", data)
+    axios.post("https://movies-project-82c42-default-rtdb.firebaseio.com", data)
   );
 
   // Define a function to handle form submission
@@ -147,14 +147,14 @@ function MyForm() {
 
             {/* Additional inputs for reservation data */}
             <div className="timedate">
-              <label htmlFor="date">Date:</label>
+              
               <Space direction="vertical">
                 <DatePicker className="timeDateBox" onChange={onChange} />
               </Space>
               {errors.date && (
                 <span className="error">{errors.date.message}</span>
               )}
-              <label htmlFor="time">Time:</label>
+             
               <TimePicker
                 className="timeDateBox"
                 id="time"
@@ -208,7 +208,7 @@ function MyForm() {
             )}
             {/*radio group*/}
             <label htmlFor="theatre">Theatre:</label>
-            <Radio.Group id="theatre" onChange={onChange1} value={value}>
+            <Radio.Group className="radio-group" id="theatre" onChange={onChange1} value={value}>
               <Space direction="vertical">
                 <Radio value={"theatre 1"}>Theatre 1</Radio>
                 <Radio value={"theatre 2"}>Theatre 2</Radio>
@@ -219,10 +219,10 @@ function MyForm() {
               <span className="error">{errors.theatre.message}</span>
             )}
             {/* End of additional inputs */}
-            <button type="button" onClick={togglePurchaseType}>
+            <button  type="button" onClick={togglePurchaseType}>
               {isOnlinePurchase ? "Pay Here" : "Pay on Site"}
             </button>
-            <input type="submit" value="Submit" />
+            <input type="submit" id="submit-button" value="Submit" />
           </form>
         </div>
       </section>
