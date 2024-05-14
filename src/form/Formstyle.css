@@ -6,12 +6,16 @@
 
 .timedate {
   display: flex;
-  gap: 10px;
+  gap: 55px;
   margin-top: 15px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timeDateBox {
   padding: 0;
+  border-radius: 20px;
 }
 
 .logIn {
@@ -62,7 +66,7 @@
   background: transparent;
 }
 
-.container1 {
+.container {
   display: flex;
   gap: 40px;
 }
@@ -71,26 +75,46 @@
   margin-left: 10px;
   color: white;
   display: flex;
-
+  border: 2px solid rgba(123, 25, 103, 0.96);
   flex-direction: column;
   gap: 15px;
-
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   margin-top: auto;
   margin-bottom: auto;
-  float: left;
-  width: 300px;
+  margin-bottom: 40px;
+
+  width: 400px;
   display: flex;
   justify-content: center;
+  border-radius: 30px;
+}
+
+.grid-container h4 {
+  margin-top: 10px;
+  text-align: center;
+  color: black;
 }
 
 .grid-container input {
   height: 35px;
   border-radius: 30px;
-
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   font-size: 15px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.grid-container label {
+  text-align: center;
 }
 
 .grid-container button {
@@ -104,9 +128,28 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+.radio-group {
+  margin-left: 13%;
+  color: white;
+}
+
+.radio-group Radio {
+  color: white;
+}
+
 .submit input {
-  width: 110px;
+  text-align: center;
+  width: 90px;
   height: 40px;
   border-radius: 30px;
   margin-left: 17rem;
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
