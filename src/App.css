@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   background: transparent;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(13, 174, 67, 0.09) 0px 2px 1px,
+    rgba(12, 163, 103, 0.09) 0px 4px 2px, rgba(8, 151, 48, 0.09) 0px 8px 4px,
+    rgba(9, 161, 73, 0.09) 0px 16px 8px, rgba(12, 145, 61, 0.09) 0px 32px 16px;
   border-bottom: 2px solid rgb(36, 181, 82);
 }
 
 .navbar-logo {
-  color: rgb(98, 176, 46);
+  color: #62b02e;
   margin-left: 30px;
   transition: 0.3s;
 }
@@ -33,7 +35,7 @@
 }
 
 .navbar h5 {
-  color: rgb(98, 176, 46);
+  color: #62b02e;
   transition: 0.3s;
 }
 .navbar h5:hover {
@@ -91,9 +93,7 @@
 
 @media screen and (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
   }
 
   body {

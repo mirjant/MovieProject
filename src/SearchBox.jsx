@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useQuery } from "react-query";
 import { searchMovies } from "./DataApi";
 import { Link } from "react-router-dom";
@@ -54,11 +54,11 @@ const SearchMovies = () => {
                     onClick={handleItemClick}
                   >
                     <div className="searchCard">
-                      <div className="img">
+                      <div className="searchImg">
                         <img
                           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                           alt={movie.title}
-                          className="movie-poster"
+                          className="searchMoviePoster"
                         />
                       </div>
 

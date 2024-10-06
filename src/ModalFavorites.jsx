@@ -3,7 +3,6 @@ import { Modal } from "antd";
 import MovieCard from "./Movies/MovieCard";
 import { HeartOutlined, HeartFilled } from "@ant-design/icons";
 
-
 const ModalFavorites = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [favorites, setFavorites] = useState([]);
@@ -14,7 +13,6 @@ const ModalFavorites = () => {
     setFavorites(favoritesFromStorage);
   };
 
- 
   useEffect(() => {
     fetchFavoritesFromLocalStorage();
   }, []);
@@ -34,7 +32,7 @@ const ModalFavorites = () => {
 
   const ButtonStyle = {
     background: "transparent",
-    color: "white",
+    color: "#62b02e",
     border: "none",
     fontSize: "25px",
     marginTop: "-8px",

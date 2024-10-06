@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-import Navbar1 from "../Navbar1";
 import { Alert } from "antd";
 import { useNavigate } from "react-router-dom";
 
@@ -12,6 +11,7 @@ function SignUp() {
     confirmPassword: "",
   });
   const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false); 
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -33,17 +33,21 @@ function SignUp() {
         {
           email: formData.email,
           password: formData.password,
-          confirmPassword: formData.confirmPassword,
           returnSecureToken: true,
         }
       );
+
       console.log("Signup successful:", response.data);
-      await axios.post("http://localhost:3000/signup", response.data);
+
       navigate("/MyForm");
-      <Alert message="Success Text" type="success" />;
+
+      
+      alert("Sign-up successful!");
     } catch (error) {
       console.error("Error signing up:", error);
-      setError(error.response.data.error.message);
+      setError(
+        error.response?.data?.error?.message || "An unknown error occurred."
+      );
     }
 
     setLoading(false);
@@ -51,7 +55,6 @@ function SignUp() {
 
   return (
     <div className="logIn">
-      <Navbar1></Navbar1>
       <form className="logInForm" onSubmit={handleSubmit}>
         <div>
           <h2>Sign Up</h2>
@@ -84,15 +87,20 @@ function SignUp() {
           <input
             className="logInInput"
             type="password"
-            id="confirmPassword" // Unique id for confirmPassword
-            name="confirmPassword" // Unique name for confirmPassword
+            id="confirmPassword"
+            name="confirmPassword"
             placeholder="Confirm Password"
             value={formData.confirmPassword}
             onChange={handleChange}
             required
           />
         </div>
-        {error && <div>Error: {error}</div>}
+
+        {error && <Alert message={error} type="error" showIcon />}
+        {success && (
+          <Alert message="Signup successful!" type="success" showIcon />
+        )}
+
         <button type="submit" disabled={loading}>
           {loading ? "Signing up..." : "Sign Up"}
         </button>

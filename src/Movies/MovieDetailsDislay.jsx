@@ -6,8 +6,8 @@ import {
   fetchMovieVideoById,
 } from "../DataApi";
 
-import Navbar1 from "../Navbar1";
-import Footer from "../Footer";
+
+
 import "./MovieDetailsDisplay.css";
 
 const MovieDetailsDisplay = () => {
@@ -56,7 +56,7 @@ const MovieDetailsDisplay = () => {
 
   return (
     <>
-      <Navbar1></Navbar1>
+      
       <section style={backgroundStyle}>
         <div className="contanier">
           <div>
@@ -126,8 +126,9 @@ const MovieDetailsDisplay = () => {
             )}
           </div>
         </div>
+        
       </section>
-      <Footer></Footer>
+     
     </>
   );
 };

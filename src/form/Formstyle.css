@@ -71,6 +71,10 @@
   gap: 40px;
 }
 
+.form-container {
+  display: flex;
+}
+
 .grid-container {
   margin-left: 10px;
   color: white;
@@ -104,7 +108,7 @@
 .grid-container input {
   height: 35px;
   border-radius: 30px;
-  width: 300px;
+  width: 77%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -152,4 +156,146 @@
   margin-right: auto;
   text-align: center;
   margin-bottom: 20px;
+}
+.movie-poster {
+  width: 300px;
+  margin-top: 8%;
+  height: 50%;
+  margin-left: 400px;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.movie-poster1 {
+  width: 400px;
+
+  border: 2px solid purple;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.revForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-right: auto;
+  gap: 30px;
+  width: 300px;
+  height: 350px;
+  border: 2px solid purple;
+  border-radius: 30px;
+}
+
+.revForm input {
+  border-radius: 30px;
+  padding-left: 10px;
+
+  height: 40px;
+}
+
+.revForm button {
+  border-radius: 30px;
+
+  width: 100px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.revTable {
+  float: right;
+  margin-top: -350px;
+  margin-right: 200px;
+
+  color: white;
+  background-color: rgb(15, 65, 78);
+  box-shadow: rgba(5, 190, 82, 0.3) 0px 19px 38px,
+    rgba(5, 190, 82, 0.3) 0px 15px 12px;
+}
+
+.revTable th {
+  border: 2px solid rgb(45, 48, 82);
+  background-color: #0aa370;
+  text-align: center;
+  width: 100px;
+}
+
+.revTable tr {
+  border: 2px solid purple;
+
+  text-align: center;
+  width: 100px;
+}
+
+.revTable td {
+  border: 2px solid purple;
+
+  text-align: center;
+  width: 100px;
+}
+
+.revTable Button {
+  border-radius: 5px;
+  margin: 3px;
+  color: white;
+  font-size: 15px;
+  padding: 3px;
+  background-image: linear-gradient(220.55deg, #4063bc 0%, #6b0013 100%);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.revTable Button:hover {
+  box-shadow: rgba(129, 7, 113, 0.25) 0px 54px 55px,
+    rgba(129, 7, 113, 0.25) 0px -12px 30px, rgba(129, 7, 113, 0.25) 0px 4px 6px,
+    rgba(129, 7, 113, 0.25) 0px 12px 13px, rgba(129, 7, 113, 0.25) 0px -3px 5px;
+  border: 5px rgba(129, 7, 113, 0.25);
+  transform: scale(1.05);
+}
+
+.revError {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: large;
+  width: 350px;
+}
+
+.revTable2 {
+  float: right;
+  margin-top: 10px;
+  margin-right: 200px;
+
+  color: white;
+  background-color: rgb(90, 18, 86);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.revTable2 th {
+  border: 2px solid rgb(45, 48, 82);
+  background-color: #6b0013;
+  text-align: center;
+  width: 100px;
+}
+
+.revTable2 tr {
+  border: 2px solid purple;
+
+  text-align: center;
+  width: 100px;
+}
+
+.revTable2 td {
+  border: 2px solid purple;
+
+  text-align: center;
+  width: 100px;
 }
